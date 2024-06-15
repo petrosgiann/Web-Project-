@@ -1,0 +1,136 @@
+{
+  "code": 1,
+  "message": "Categories retrieved successfully",
+  "categories": [
+    {
+      "id": "5",
+      "category_name": "Food",
+      "date_added": "2023-11-06 21:58:08"
+    },
+    {
+      "id": "6",
+      "category_name": "Beverages",
+      "date_added": "2023-11-06 21:58:12"
+    },
+    {
+      "id": "7",
+      "category_name": "Clothing",
+      "date_added": "2023-11-06 21:58:27"
+    },
+    {
+      "id": "8",
+      "category_name": "Hacker of class",
+      "date_added": "2023-11-07 15:52:18"
+    },
+    {
+      "id": "9",
+      "category_name": "2d hacker",
+      "date_added": "2023-11-07 15:52:29"
+    },
+    {
+      "id": "10",
+      "category_name": "",
+      "date_added": "2023-11-07 15:52:30"
+    },
+    {
+      "id": "11",
+      "category_name": "Test",
+      "date_added": "2023-11-07 15:52:51"
+    },
+    {
+      "id": "13",
+      "category_name": "-----",
+      "date_added": "2023-11-07 15:53:06"
+    },
+    {
+      "id": "14",
+      "category_name": "Flood",
+      "date_added": "2023-11-07 15:56:06"
+    },
+    {
+      "id": "15",
+      "category_name": "new cat",
+      "date_added": "2023-11-07 15:59:06"
+    },
+    {
+      "id": "16",
+      "category_name": "Medical Supplies",
+      "date_added": "2023-11-11 14:10:02"
+    },
+    {
+      "id": "19",
+      "category_name": "Shoes",
+      "date_added": "2023-11-12 15:03:22"
+    },
+    {
+      "id": "21",
+      "category_name": "Personal Hygiene ",
+      "date_added": "2023-11-13 13:23:48"
+    },
+    {
+      "id": "22",
+      "category_name": "Cleaning Supplies",
+      "date_added": "2023-11-18 18:15:11"
+    },
+    {
+      "id": "23",
+      "category_name": "Tools",
+      "date_added": "2023-11-18 18:20:49"
+    },
+    {
+      "id": "24",
+      "category_name": "Kitchen Supplies",
+      "date_added": "2023-11-18 18:27:29"
+    },
+    {
+      "id": "25",
+      "category_name": "Baby Essentials",
+      "date_added": "2023-11-22 12:50:08"
+    },
+    {
+      "id": "26",
+      "category_name": "Insect Repellents",
+      "date_added": "2023-11-22 12:53:07"
+    },
+    {
+      "id": "27",
+      "category_name": "Electronic Devices",
+      "date_added": "2023-11-22 20:02:41"
+    },
+    {
+      "id": "28",
+      "category_name": "Cold weather",
+      "date_added": "2023-11-22 20:42:05"
+    },
+    {
+      "id": "29",
+      "category_name": "Animal Food",
+      "date_added": "2023-11-23 13:06:42"
+    },
+    {
+      "id": "30",
+      "category_name": "Financial support",
+      "date_added": "2023-11-23 14:23:39"
+    },
+    {
+      "id": "33",
+      "category_name": "Cleaning Supplies.",
+      "date_added": "2023-11-26 15:39:39"
+    },
+    {
+      "id": "34",
+      "category_name": "Hot Weather",
+      "date_added": "2023-11-27 23:38:18"
+    },
+    {
+      "id": "35",
+      "category_name": "First Aid ",
+      "date_added": "2023-12-09 15:30:22"
+    },
+    {
+      "id": "39",
+      "category_name": "Test_0",
+      "date_added": "2023-12-17 19:14:01"
+    }
+  ]
+}

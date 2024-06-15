@@ -1,0 +1,55 @@
+main{
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "firstarea" "secondarea";
+    justify-content: space-evenly;
+
+}
+
+h2{
+    font-size: 35px;
+    margin-left: 22%;
+    margin-top: 16%;
+    margin-bottom: 2%;
+}
+
+button{
+    background-color: #4f8996;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: #356b77;
+}
+
+input[type="date"] {
+    height: 50px;
+    width: 22%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgba(152, 101, 101, 0.247);
+    
+}
+
+
+::-webkit-input-placeholder{
+    color:rgba(255,255,255,0.7);
+
+}
+
+.first{
+    grid-area: firstarea;
+    margin-bottom: 20%;
+    margin-left: 18%;
+
+}
+
+.chart{
+    grid-area: secondarea;
+}

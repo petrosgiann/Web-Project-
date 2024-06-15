@@ -1,0 +1,125 @@
+CREATE TABLE Users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    user_type ENUM('admin', 'citizen', 'rescuer'),
+    fullname VARCHAR(255),
+    phone VARCHAR(10),
+    latidute DECIMAL(15,11) NOT NULL,
+    longitude DECIMAL(15,11) NOT NULL,
+);
+
+
+CREATE TABLE Categories (
+    category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(255) NOT NULL,
+    date_added TIMESTAMP
+);
+
+CREATE TABLE Products (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_id INT NOT NULL,
+    product_name VARCHAR(255) NOT NULL,
+    quantity_available INT NOT NULL,
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+);
+
+CREATE TABLE productDetails (
+    detail_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_id INT,
+    detail_name VARCHAR(255),
+    detail_value VARCHAR(255),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+
+CREATE TABLE Announcements (
+    announcement_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(255) NOT NULL,
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    quantity INT,
+    product_id INT,
+    status ENUM ('open','closed'),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+
+CREATE TABLE RescuerInventory (
+    rescuer_id INT,
+    product_id INT,
+    quantity INT,
+    PRIMARY KEY (rescuer_id, product_id),
+    FOREIGN KEY (rescuer_id) REFERENCES Users(user_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+
+CREATE TABLE Requests (
+    request_id INT PRIMARY KEY AUTO_INCREMENT,
+    person_id INT, 
+    product_id INT, 
+    num_people_affected INT,
+    status ENUM('open', 'accepted', 'completed') DEFAULT 'open',
+    date_submitted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    date_accepted TIMESTAMP,
+    date_completed TIMESTAMP,
+    FOREIGN KEY (person_id) REFERENCES Users(user_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+CREATE TABLE Offers (
+    offer_id INT PRIMARY KEY AUTO_INCREMENT,
+    citizen_id INT,
+    announcement_id INT,
+    status ENUM('pending', 'accepted', 'cancelled') DEFAULT 'pending',
+    date_submitted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    date_accepted TIMESTAMP,
+    date_cancelled TIMESTAMP,
+    date_completed TIMESTAMP,
+    FOREIGN KEY (citizen_id) REFERENCES Users(user_id),
+    FOREIGN KEY (announcement_id) REFERENCES Announcements(announcement_id)
+);
+
+
+
+CREATE TABLE OfferDetails (
+    offer_id INT,
+    product_id INT,
+    quantity INT,
+    PRIMARY KEY (offer_id, product_id),
+    FOREIGN KEY (offer_id) REFERENCES Offers(offer_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+CREATE TABLE Tasks (
+    task_id INT PRIMARY KEY AUTO_INCREMENT,
+    citizen_id INT,
+    rescuer_id INT,
+    task_type ENUM('request', 'offer') NOT NULL,
+    date_submitted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    product_id INT,
+    quantity INT,
+    offer_id INT,
+    request_id INT,
+    status ENUM('pending', 'accepted', 'completed') DEFAULT 'pending',
+    FOREIGN KEY (rescuer_id) REFERENCES Users(user_id),
+    FOREIGN KEY (citizen_id) REFERENCES Users(user_id),
+    FOREIGN KEY (offer_id) REFERENCES offers(offer_id),
+    FOREIGN KEY (request_id) REFERENCES requests(request_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+CREATE TABLE Markers (
+    marker_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    type ENUM('car', 'offer', 'request','selected_offer','selected_request'),
+    offer_id INT(11),
+    request_id INT(11),
+    rescuer_id INT(11),
+    FOREIGN KEY (user_id) REFERENCES users(user_id) 
+    FOREIGN KEY (request_id) REFERENCES requests(request_id) 
+    FOREIGN KEY (offer_id) REFERENCES offers(offer_id) 
+    FOREIGN KEY (rescuer_id) REFERENCES users(user_id) 
+);
+
+

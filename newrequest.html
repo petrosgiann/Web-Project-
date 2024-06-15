@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="managment.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+
+<body>
+  <header>
+    <h1>HelpHustle</h1>
+  </header>
+    
+    <nav>
+      <ul>
+        <li><a href="citizenmain.html">Home</a></li>
+        <li><a href="myrequests.html">My Requests</a></li>
+        <li><a href="newrequest.html">New Request</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+        <li><a href="myoffers.html">My Offers</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="actions">
+         <div>
+        <select id="categoryDropdown"></select>
+        </div>
+      </div>
+
+     
+      <div class="prodtable">
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Current Quantity</th>
+                    <th>Select Number of Persons</th>
+
+                </tr>
+            </thead>
+            <tbody id="productTableBody"></tbody>
+        </table>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy;HelpHustle 2023</p>
+    </footer>
+
+    <script src="newrequest.js"></script>
+</body>
+
+</html>

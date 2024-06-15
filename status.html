@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage Status</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="status.css">
+  <link rel="stylesheet" href="general.css">
+</head>
+
+<body>
+  <header>
+    <h1>HelpHustle</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="adminmain.html">Home</a></li>
+      <li><a href="adminmap.html">Map</a></li>
+      <li><a href="managment.html">Storeage Managment</a></li>
+      <li><a href="status.html">Storage Status</a></li>
+      <li><a href="adminstats.html">Statistics</a></li>
+      <li><a href="createrescuer.html">New Rescuer</a></li>
+      <li><a href="createannouncment.html">New Announcement</a></li>
+      <li><a href="logout.php">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="form">
+      <h3>Select Category For View:</h3>
+          <?php
+          include("getcategories.php");
+          ?>
+        
+    </div>
+
+    <div class="status">
+      <div id="statustable">
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Category</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Status</th>
+              </tr>
+          </thead>
+          <tbody>
+            
+          <?php
+          include("status.php");
+          ?>
+              
+          </tbody>
+      </table>
+      </div>  
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;HelpHustle 2023</p>
+  </footer>
+
+  <script src="status.js"></script>
+</body>
+
+</html>

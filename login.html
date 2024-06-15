@@ -1,0 +1,49 @@
+<?php
+include("login.php");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHustle Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+   <header> <h1>HelpHustle</h1></header>
+
+   <div class="loginform">
+
+    <div class="title"><h2>Login</h2></div>
+
+       <div class="form">
+       
+        <form  action=" " method="POST">
+       
+         <div class="input-field">
+         <input type="text" id="txtUsername" name="username" maxlength="30" placeholder="Enter your username.." autocomplete="on" required>
+         <br> </div>
+       
+         <div class="input-field">
+         <input type="password" id="txtPassword" name="password" maxlength="30" placeholder="Enter your password.." autocomplete="on" pattern="[0-9a-zA-Z]{4,10}" required>
+         <br> </div>
+         <input class="button" type="submit" value="Login">
+       
+         <p>If you don't have an account, <a href="createcitizien.html">create one here</a>.</p>
+        </form>
+       </div>
+    
+     
+   </div>
+  
+    <footer>
+      <p>&copy; 2023 HelpHustle</p>
+    </footer>
+
+</body>
+</html>

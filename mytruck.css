@@ -1,0 +1,122 @@
+main{
+    grid-template-columns: 
+    50% 50%;
+  
+    justify-content: space-evenly;
+}
+
+.ltruck h2{
+    padding-left: 37%;
+    padding-bottom: 10%;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.mtruck h2{
+    padding-left: 32%;
+    margin-bottom: 5%;
+    text-shadow: 5px 5px 5px gray;  
+
+}
+
+.mtruck{
+    border-right: 1px solid;
+    margin-right: 2%;
+    display:grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button{
+    background-color: #4f8996;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #356b77;
+}
+
+/* Στυλισμός του πίνακα */
+table {
+    width: 75%;
+    border-collapse: collapse;
+    border-radius: 10px; 
+    overflow: hidden; /* Απαραίτητο για να δουλέψει η στρογγυλεμένη γωνία */
+    margin-left: 14%;
+    
+}
+
+/* Στυλισμός των κεφαλίδων */
+thead {
+    background-color: #4f8996;
+    color: #fff;
+   
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Αλλαγή χρώματος για κάθε άλλη γραμμή */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Αν δεν υπάρχουν προϊόντα στο όχημα */
+tbody tr td[colspan='2'],h3 {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+select{
+   width: 10%;
+}
+
+
+form {
+    padding: 40px;
+    border: 2px solid #356b77;
+    border-radius: 10px;
+    background-color:#f2f2f2 ;
+    overflow: auto;
+    max-width: 450px;
+    max-height: 200px;
+
+}
+
+
+input[type="checkbox"] {
+
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    width: 35px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4f8996;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #356b77;
+}
+
+
+  

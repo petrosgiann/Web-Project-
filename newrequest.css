@@ -1,0 +1,58 @@
+.newrequest{
+  display:grid;
+  justify-content: center;
+  grid-template-rows: 120px 100px;
+  
+  }     
+  
+  .newrequest h2{
+    display:grid;
+    justify-content:center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px gray;
+    
+  }
+  
+  .button{
+    background-color:rgb(112, 93, 65);
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s;
+    
+  }
+  
+  .button:hover{
+  box-shadow:5px 5px 10px rgba(0,0,0,0.3);
+  }
+  
+  
+  .input-field{
+  display:grid;
+  justify-content:space-evenly;
+  
+  }
+  .input-field>input{
+  height: 47px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 0 0 0 80px;
+  background: rgba(152, 101, 101, 0.247);
+  }
+  
+  ::-webkit-input-placeholder{
+  color:rgba(255,255,255,0.7);
+  }
+  
+
+  .error-message {
+    color: red;
+}

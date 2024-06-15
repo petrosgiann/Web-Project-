@@ -1,0 +1,28 @@
+main{
+    grid-area: mainpage;
+    display:grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pagetitle{
+    display:grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pagetitle>h3{
+    padding-left: 220px;
+}
+
+.pagetitle>h1{
+    font-size: 70px;
+}
+
+.articletitle{
+    padding-left: 45%;
+}
+
+
+
+

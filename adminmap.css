@@ -1,0 +1,23 @@
+main{
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+#map{
+    justify-content: center; 
+    align-items: center; 
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;  
+    z-index: 0; 
+    border-radius: 10px;
+    z-index: 0;
+}
+
+
+
+
+
+

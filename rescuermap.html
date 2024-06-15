@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width-device-width, initial-scale=1.0">
+ <title>Rescuer Map</title> 
+
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="rescuermap.css">
+ <link rel="stylesheet" href="general.css">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+  </head>
+
+  <body>
+
+  
+    <header>
+      <h1>HelpHustle</h1>
+    </header>
+      
+    <nav>
+        <ul class="menunav">
+          <li><a href="rescuermain.html">Home</a></li>
+          <li><a href="mytruck.html">My Truck</a></li>
+          <li><a href="rescuermap.html">Map & Tasks</a></li>
+          <li><a href="logout.php">Logout</a></li>
+        </ul>
+      </nav>
+
+
+    <main>
+        
+    <div  id="map"> </div>
+
+    <div id="taskspanel">
+        <h2>Current Tasks</h2>
+        <ul id="tasks-list"></ul>
+    </div>
+    
+  
+   </main>
+
+
+
+    <footer>
+      <p>&copy;HelpHustle 2023</p>
+   
+    </footer>
+
+    
+    <script src="rescuermap.js"> </script> 
+    <script src="taskspanel.js"> </script> 
+  </body>
+</html>

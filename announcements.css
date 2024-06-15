@@ -1,0 +1,66 @@
+main{
+  justify-content: space-evenly;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px; 
+  overflow: hidden; 
+  margin-bottom: 10px;
+  min-width: 900px;
+  min-height: 100px;
+
+}
+
+/* Στυλισμός των κεφαλίδων */
+thead {
+  background-color: #4f8996;
+  color: #fff;
+ 
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Αλλαγή χρώματος για κάθε άλλη γραμμή */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+tbody tr td[colspan='2'] {
+  text-align: center;
+  font-style: italic;
+  color: #888;}
+
+/* Στυλ για το κουμπί υποβολής */
+.button {
+  background-color:rgb(112, 65, 66);
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  width: 40%;
+  background: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: .3s;
+  margin-left: 30%;
+  margin-top: 50px;
+}
+
+/* Στυλ για το κουμπί υποβολής κατά το πέρασμα του ποντικιού */
+.button:hover {
+  box-shadow:5px 5px 10px rgba(0,0,0,0.3);
+  background: rgba(119, 104, 104, 0.7);
+}
+
+.announcementtable{
+  overflow-y: auto;
+  max-height: 500px;
+}

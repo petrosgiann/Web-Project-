@@ -1,0 +1,85 @@
+<?php
+include("createannouncment.php");
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Announcement</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="managment.css">
+  <style>
+
+  table {
+    width: 70%;
+    border-collapse: collapse;
+    border-radius: 10px; 
+    overflow: hidden; /* Απαραίτητο για να δουλέψει η στρογγυλεμένη γωνία */ 
+    margin-left: 17%;  
+  }
+ </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>HelpHustle</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="adminmain.html">Home</a></li>
+    <li><a href="adminmap.html">Map</a></li>
+    <li><a href="managment.html">Storeage Managment</a></li>
+    <li><a href="status.html">Storage Status</a></li>
+    <li><a href="adminstats.html">Statistics</a></li>
+    <li><a href="createrescuer.html">New Rescuer</a></li>
+    <li><a href="createannouncment.html">New Announcement</a></li>
+    <li><a href="logout.php">Logout</a></li>
+  </ul>
+</nav>
+
+
+<main>
+  <div class="actions">
+    <div>
+   <select id="categoryDropdown"></select>
+   </div>
+ </div>
+
+
+ <div class="prodtable">
+
+   <table id="productTable">
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Select Quantity</th>
+
+           </tr>
+       </thead>
+       <tbody id="productTableBody"></tbody>
+   </table>
+</div>
+   
+</div>
+
+</main>
+
+  <footer>
+      <p>&copy; 2023 HelpHustle</p>
+  </footer>
+
+  <script src="createannouncement.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+

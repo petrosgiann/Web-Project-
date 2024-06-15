@@ -1,0 +1,78 @@
+<?php
+include("createcitizien.php");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="createaccount.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+   
+    
+</head>
+
+<body>
+    <header>
+        <h1>HelpHustle</h1>
+    </header>
+
+    <main>
+
+    <div class="maparea">
+        
+      <div><h2>Click on your potision</h2></div>
+    <div  id="map"> </div>
+
+    </div>
+    
+
+    <div class="createaccount">
+
+    <h2>Create Your Account </h2>
+
+    <form action=" " method="POST">
+        <div class="input-field">
+     
+        <input type="text" id="txtUsername" name="username" maxlength="30" placeholder="Enter your username.." autocomplete="on" required>
+        <br>
+
+       
+        <input type="password" id="txtPassword" name="password" maxlength="30" placeholder="Enter your password.." autocomplete="on" pattern="[0-9a-zA-Z]{4,10}" required>
+        <br>
+
+    
+        <input type="text" id="txtName" name="fullname" maxlength="50" placeholder="Enter your full name.." required>
+        <br>
+
+        
+        <input type="tel" id="txtPhone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number.." required>
+        <br>
+
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+        </div>
+
+        <input class="button" type="submit" value="Submit">
+    </form>
+   
+   </div>
+
+</main>
+
+    <footer>
+        <p>&copy; 2023 HelpHustle</p>
+    </footer>
+
+
+    <script src="createposition.js"> </script> 
+</body>
+</html>
+
+
+

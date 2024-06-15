@@ -1,0 +1,81 @@
+<?php
+include("createrescuer.php");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Rescuer Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="createrescuer.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>HelpHustle</h1>
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="adminmain.html">Home</a></li> 
+          <li><a href="adminmap.html">Map</a></li>
+          <li><a href="managment.html">Storeage Managment</a></li>
+          <li><a href="status.html">Storage Status</a></li>
+          <li><a href="adminstats.html">Statistics</a></li>
+          <li><a href="createrescuer.html">New Rescuer</a></li>
+          <li><a href="createannouncment.html">New Announcement</a></li>
+          <li><a href="logout.php">Logout</a></li>
+        </ul>
+      </nav>
+
+    <main>
+
+    <div class="maparea">
+        
+        <div><h2>Click on your potision</h2></div>
+          <div  id="map"> </div>
+        </div>
+          
+      
+    <div class="createaccount">
+
+    <h2>Create New Resquer Account </h2>
+
+    <form action=" " method="POST">
+        <div class="input-field">
+      
+        <input type="text" id="txtUsername" name="username" maxlength="30" placeholder="Enter username.." autocomplete="on" required>
+        <br>
+
+    
+        <input type="password" id="txtPassword" name="password" maxlength="30" placeholder="Enter password.." autocomplete="on" pattern="[0-9a-zA-Z]{4,10}" required>
+        <br>
+
+
+        <input type="hidden" id="latitude" name="latitude">
+
+        <input type="hidden" id="longitude" name="longitude">
+      
+        </div>
+
+        <input class="button" type="submit" value="Submit">
+    </form>
+   
+</div>
+</main>
+
+    <footer>
+        <p>&copy; 2023 HelpHustle</p>
+    </footer>
+
+
+    <script src="createposition.js"> </script> 
+</body>
+</html>

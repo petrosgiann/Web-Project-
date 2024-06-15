@@ -1,0 +1,41 @@
+main{
+  justify-content: space-evenly;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px; 
+  overflow: hidden; /* Απαραίτητο για να δουλέψει η στρογγυλεμένη γωνία */
+  
+}
+
+/* Στυλισμός των κεφαλίδων */
+thead {
+  background-color: #4f8996;
+  color: #fff;
+ 
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Αλλαγή χρώματος για κάθε άλλη γραμμή */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Αν δεν υπάρχουν προϊόντα στο όχημα */
+tbody tr td[colspan='2'] {
+  text-align: center;
+  font-style: italic;
+  color: #888;}
+
+  .requeststable{
+    overflow-y: auto;
+    max-width: 900px;
+  }

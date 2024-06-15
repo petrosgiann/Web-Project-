@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <title>My Truck</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="mytruck.css">
+
+
+
+</head>
+
+<body> 
+    <header>
+        <h1>HelpHustle</h1>
+      </header>
+        
+        <nav>
+          <ul>
+            <li><a href="rescuermain.html">Home</a></li>
+            <li><a href="mytruck.html">My Truck</a></li>
+            <li><a href="rescuermap.html">Map & Tasks</a></li>
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+        </nav>
+     
+      
+      <main>
+        <div class="mtruck">
+
+        <div id="getproducts">
+          <h2>Load Products</h2>
+          <?php
+          include("getproducts.php");
+        
+          ?>
+        </div>
+
+        <div id="returnproducts">
+          <h2>UnLoad Products</h2>
+          <?php
+          include("returnproducts.php");
+        
+          ?>
+        </div>
+       
+      </div>
+    
+        </div>
+
+        <div class="ltruck">
+        <h2>Current Truck Load</h2>
+        <div id="truckLoad">
+          <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            <?php
+            include("mytruck.php");
+            ?>
+                
+            </tbody>
+        </table>
+
+        </div>
+        </div>
+      </main>
+  
+  
+  
+      <footer>
+        <p>&copy;HelpHustle 2023</p>
+     
+      </footer>
+      
+      <script src="mytruck.js"></script> 
+      
+</body>
+</html>
